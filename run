@@ -1,6 +1,7 @@
 #! /usr/bin/env bash
 
-source menu.sh
+source $CONFIG_PATH/config.sh
+source nizzetup/menu.sh
 
 # If we don't got any parameter we will do this interactively
 if [ $# -eq 0 ]; then
