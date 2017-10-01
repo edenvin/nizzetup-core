@@ -1,0 +1,14 @@
+#! /usr/bin/env bash
+
+source menu.sh
+
+# If we don't got any parameter we will do this interactively
+if [ $# -eq 0 ]; then
+    while [ 1 ]; do
+        show_menu
+    done
+else
+    for option in $@; do
+        run_option $option
+    done
+fi
