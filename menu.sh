@@ -2,7 +2,7 @@
 
 function run_option {
     printf "\nExecuting $1\n"
-    $CONFIG_PATH/configs/$1
+    configs/$1
 }
 
 function show_menu {
